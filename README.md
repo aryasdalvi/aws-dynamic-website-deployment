@@ -140,27 +140,28 @@ http://184.73.103.148/signup.html
 ## Screenshots
 
 
--Terminal:
+- Terminal:
 
 <img width="1378" height="735" alt="Screenshot 2026-10-23 164725" src="https://github.com/user-attachments/assets/d4617a35-865e-46a1-8112-81ee6309b0a8" />
 
--Nginx, PHP-FPM status
+- Nginx, PHP-FPM status:
+
 <img width="1414" height="715" alt="Screenshot 2026-10-23 183026" src="https://github.com/user-attachments/assets/d75eca7b-612d-4dc0-b10e-875b305b02c4" />
 
--Database and table structure:
+- Database and table structure:
 
 <img width="1031" height="602" alt="Screenshot 2026-10-23 165230" src="https://github.com/user-attachments/assets/1cdb0b70-e4cd-4515-a371-def81fc5e6b9" />
 
--Ec2 instance state:
+- Ec2 instance state:
 
 <img width="1844" height="615" alt="Screenshot 2026-10-23 165345" src="https://github.com/user-attachments/assets/6601609f-353f-4d57-829d-b8ce7fc5d005" />
 
--Registration form interface:
+- Registration form interface:
 
 <img width="1843" height="912" alt="Screenshot 2026-10-23 183612" src="https://github.com/user-attachments/assets/b5d9e4ed-2c5f-48f2-9499-a1cc002f8dcc" />
 
 - Deployed and Verified database records:
-- 
+  
 <img width="1231" height="420" alt="Screenshot 2026-10-23 183535" src="https://github.com/user-attachments/assets/44677058-39f8-4cfd-893b-62bb4643540b" />
 
 
