@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e0e7ff, #f5f3ff, #eef2ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 16px;
+            color: #1e293b;
+        }
+
+        .form-card {
+            width: 100%;
+            max-width: 520px;
+            background: #ffffff;
+            padding: 38px;
+            border-radius: 20px;
+            box-shadow: 0 15px 45px rgba(31, 41, 55, 0.12);
+        }
+
+        .form-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-icon {
+            width: 58px;
+            height: 58px;
+            margin: 0 auto 16px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #eef2ff;
+            font-size: 28px;
+        }
+
+        h1 {
+            font-size: 27px;
+            margin-bottom: 10px;
+            color: #172554;
+        }
+
+        .subtitle {
+            color: #64748b;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #334155;
+        }
+
+        input,
+        textarea,
+        select {
+            width: 100%;
+            padding: 13px 14px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 15px;
+            font-family: inherit;
+            background: #fff;
+            color: #1e293b;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.13);
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .gender-options {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            padding-top: 5px;
+        }
+
+        .gender-options label {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin: 0;
+            font-weight: 400;
+            cursor: pointer;
+        }
+
+        .gender-options input {
+            width: auto;
+            accent-color: #4f46e5;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 5px;
+            border: none;
+            border-radius: 10px;
+            background: linear-gradient(135deg, #4f46e5, #7c3aed);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(79, 70, 229, 0.25);
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 22px;
+            font-size: 12px;
+            color: #94a3b8;
+        }
+
+        @media (max-width: 480px) {
+            .form-card {
+                padding: 26px 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="form-card">
+
+        <header class="form-header">
+            <div class="form-icon">📝</div>
+            <h1>Student Registration</h1>
+            <p class="subtitle">
+                Enter your details below to submit your registration.
+            </p>
+        </header>
+
+        <form action="submit.php" method="POST">
+
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    autocomplete="name"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="website">Website</label>
+                <input
+                    type="url"
+                    id="website"
+                    name="website"
+                    placeholder="https://example.com"
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="comment">Comment</label>
+                <textarea
+                    id="comment"
+                    name="comment"
+                    placeholder="Write a short message..."
+                ></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>Gender</label>
+
+                <div class="gender-options">
+                    <label>
+                        <input type="radio" name="gender" value="Female">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Male">
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Other">
+                        Other
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Submit Registration →</button>
+
+        </form>
+
+        <p class="footer-text">
+            AWS EC2 · Nginx · PHP · MariaDB
+        </p>
+
+    </main>
+
+</body>
+</html>
